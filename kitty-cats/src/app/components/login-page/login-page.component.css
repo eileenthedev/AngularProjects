@@ -1,0 +1,12 @@
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--blueish-grey);
+}
+
+form {
+    width: 70%;
+}

@@ -1,0 +1,28 @@
+<nav class="navbar navbar-dark">
+  <a class="navbar-brand" routerLink="/cats">Home</a>
+  
+  <div class="my-2 my-lg-0">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+          <a class="nav-link">Logout</a>
+      </li>   
+    </ul>
+  </div>
+</nav>
+
+<div class="container main-content">
+  <div class="row justify-content-center">
+    <div class="col-10 col-md-5">
+      <img [src]="cat?.dp" width="300" [alt]="cat?.name">
+    </div>
+ 
+    <div class="col-10 col-md-7">
+      <h4>{{ cat?.name }}</h4>
+      <em>{{ cat?.dob}} </em>
+      <h6>{{ cat?.adopted ? 'Adopted' : 'Not adopted'}}</h6>
+      <p class="cat-details" [innerHTML]="cat?.description"></p>
+ 
+      <a routerLink="/cats">Back</a>
+    </div>
+  </div>
+ </div>
